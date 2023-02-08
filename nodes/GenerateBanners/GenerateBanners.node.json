@@ -1,0 +1,19 @@
+{
+	"node": "n8n-nodes-generatebanners.GenerateBanners",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing & Content"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://www.generatebanners.com/helpdesk/how-to-get-my-generatebanners-api-keys"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.generatebanners/"
+			}
+		],
+		"generic": []
+	}
+}
