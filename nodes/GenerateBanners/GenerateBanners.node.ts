@@ -63,7 +63,14 @@ export class GenerateBanners implements INodeType {
 			if (resource === 'image') {
 				if (operation === 'create') {
 					const templateId = this.getNodeParameter('templateId', i) as string;
+					const variables = this.getNodeParameter('variables', i) as any;
 					const query: IDataObject = {};
+					if(variables && Array.isArray(variables.variableValues)) {
+						for (let j = 0; j < variables.variableValues.length; j++) {
+							const variable = variables.variableValues[j];
+							query[variable.name] = variable.value;
+						}
+					}
 					responseData = await generateBannersApiRequest.call(this, 'GET', `/template/${templateId}/sign-url`, {}, query);
 				}
 			}
