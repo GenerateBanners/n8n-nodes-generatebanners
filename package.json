@@ -1,7 +1,7 @@
 {
 	"name": "@generatebanners/n8n-nodes-generatebanners",
 	"version": "0.1.0",
-	"description": "GenerateBanners n8n nodes.",
+	"description": "GenerateBanners n8n node",
 	"keywords": [
 		"n8n-community-node-package"
 	],
